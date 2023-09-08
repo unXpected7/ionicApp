@@ -87,7 +87,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
               <IonSegmentButton value="favorites">Favorites</IonSegmentButton>
             </IonSegment>
           )}
-          {!ios && !showSearchbar && <IonTitle>Reimbursment</IonTitle>}
+          {!ios && !showSearchbar && <IonTitle>Reimbursement</IonTitle>}
           {showSearchbar && (
             <IonSearchbar
               showCancelButton="always"
@@ -131,7 +131,7 @@ const SchedulePage: React.FC<SchedulePageProps> = ({
       <IonContent fullscreen={true}>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Reimbursment</IonTitle>
+            <IonTitle size="large">Reimbursement</IonTitle>
           </IonToolbar>
           <IonToolbar>
             <IonSearchbar

@@ -87,14 +87,22 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
               {track}
             </span>
           ))}
-          <p>{session.description}</p>
-          <IonText color="medium">
-            {session.timeStart} &ndash; {session.timeEnd}
+          <IonText>
+            {"EmployeeName"} &ndash; {session.EmployeeName}
             <br />
-            {session.location}
+            {"Category"} &ndash; {session.Category}
+            <br />
+            {"EmployeeNumber"} &ndash; {session.EmployeeNumber}
+            <br />
+            {"Reimbursement"} &ndash; {session.Reimbursement}
+            <br />
+            {"Description"} &ndash; {session.Description}
+            <br />
+            {"Status"} &ndash; {session.Status}
+            <br />
           </IonText>
         </div>
-        <IonList>
+        {/* <IonList>
           <IonItem onClick={() => sessionClick('watch')} button>
             <IonLabel color="primary">Watch</IonLabel>
           </IonItem>
@@ -116,7 +124,7 @@ const SessionDetail: React.FC<SessionDetailProps> = ({
           <IonItem onClick={() => sessionClick('leave feedback')} button>
             <IonLabel color="primary">Leave Feedback</IonLabel>
           </IonItem>
-        </IonList>
+        </IonList> */}
       </IonContent>
     </IonPage>
   );

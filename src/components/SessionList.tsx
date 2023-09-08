@@ -6,6 +6,8 @@ import {
   IonListHeader,
   IonAlert,
   AlertButton,
+  IonButtons,
+  IonIcon,
 } from '@ionic/react';
 import React, { useState, useCallback, useRef, useEffect } from 'react';
 import { Schedule, Session } from '../models/Schedule';
@@ -89,8 +91,15 @@ const SessionList: React.FC<SessionListProps> = ({
                 listType={listType}
               />
             ))}
+              
             <IonItemDivider>
-              <Text>cek</Text>
+              <IonButtons slot="secondary">
+                <IonButtons>
+                  <IonIcon
+                    slot="start" name="person-circle"></IonIcon>
+                  Contact
+                </IonButtons>
+              </IonButtons>
             </IonItemDivider>
           </IonItemGroup>
         ))}

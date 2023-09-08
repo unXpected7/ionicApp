@@ -32,7 +32,7 @@ const MainTabs: React.FC<MainTabsProps> = () => {
           render={() => <SchedulePage />}
           exact={true}
         />
-        <Route
+        {/* <Route
           path="/tabs/speakers"
           render={() => <SpeakerList />}
           exact={true}
@@ -41,21 +41,21 @@ const MainTabs: React.FC<MainTabsProps> = () => {
           path="/tabs/speakers/:id"
           component={SpeakerDetail}
           exact={true}
-        />
+        /> */}
         <Route path="/tabs/schedule/:id" component={SessionDetail} />
-        <Route path="/tabs/speakers/sessions/:id" component={SessionDetail} />
+        {/* <Route path="/tabs/speakers/sessions/:id" component={SessionDetail} /> */}
         <Route path="/tabs/map" render={() => <MapView />} exact={true} />
         <Route path="/tabs/about" render={() => <About />} exact={true} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
         <IonTabButton tab="schedule" href="/tabs/schedule">
           <IonIcon icon={calendar} />
-          <IonLabel>Reimbursment</IonLabel>
+          <IonLabel>Reimbursement</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="speakers" href="/tabs/speakers">
+        {/* <IonTabButton tab="speakers" href="/tabs/speakers">
           <IonIcon icon={people} />
           <IonLabel>Speakers</IonLabel>
-        </IonTabButton>
+        </IonTabButton> */}
         <IonTabButton tab="map" href="/tabs/map">
           <IonIcon icon={location} />
           <IonLabel>Map</IonLabel>

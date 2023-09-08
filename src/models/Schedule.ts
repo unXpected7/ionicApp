@@ -17,4 +17,12 @@ export interface Session {
   description: string;
   speakerNames: string[];
   tracks: string[];
+  EmployeeNumber: string;
+  EmployeeName: string;
+  ClaimDate: string;
+  Categor: string;
+  Reimbursement: string;
+  Description: string;
+  Status: string;
+  Category: string;
 }

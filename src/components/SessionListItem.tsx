@@ -91,11 +91,20 @@ const SessionListItem: React.FC<SessionListItemProps> = ({
     >
       <IonItem routerLink={`/tabs/schedule/${session.id}`}>
         <IonLabel>
-          <h3>{session.name}</h3>
+          <h3>{session.EmployeeName}</h3>
+          <h3>{session.Category}</h3>
           <p>
+            {/* {session.timeStart}&mdash;&nbsp;
             {session.timeStart}&mdash;&nbsp;
-            {session.timeStart}&mdash;&nbsp;
-            {session.location}
+            {session.location} */}
+            {/* {session.EmployeeNumber}
+            {session.EmployeeName}
+            {session.ClaimDate}
+            {session.Category}
+            {session.Reimbursement}
+            {session.Description}
+            {session.Status} */}
+          
           </p>
         </IonLabel>
       </IonItem>
